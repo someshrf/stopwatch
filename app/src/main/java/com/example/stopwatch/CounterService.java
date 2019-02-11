@@ -24,6 +24,14 @@ public class CounterService extends Service{
 
     }
 
+    @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+
+
+        return super.onStartCommand(intent, flags, startId);
+
+    }
+
     private Runnable sendUpdatesToUI = new Runnable() {
         @Override
         public void run() {

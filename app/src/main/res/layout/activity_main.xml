@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button android:id="@+id/startButton"
-        android:onClick="onStop"
+        android:onClick="onStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/timerValue"
@@ -30,23 +30,23 @@
         />
 
     <Button android:id="@+id/pauseButton"
-        android:onClick="onClick"
+        android:onClick="onStop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/startButton"
         android:layout_marginTop="10dp"
         android:layout_centerInParent="true"
-        android:text="Stop"
+        android:text="Pause"
         />
 
-    <Button android:id="@+id/Reset"
+    <Button android:id="@+id/resetButton"
         android:onClick="onReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/startButton"
+        android:layout_below="@+id/pauseButton"
         android:layout_marginTop="10dp"
         android:layout_centerInParent="true"
-        android:text="Stop"
+        android:text="Reset"
         />
 
 
